@@ -9,13 +9,16 @@ const App = () => {
   return (
     <div className="app">
 
-      <div className="px-6 md:px-16 lg:px-24 xl:px-32">
+      <div className="">
         <Navbar />
-        <Routes>
+        <div className="pt-32 px-6 md:px-16 lg:px-24 xl:px-32">
+           <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/coin/:coinId" element={<Coin />} />
         </Routes>
         <Footer />
+        </div>
+       
       </div>
 
     </div>

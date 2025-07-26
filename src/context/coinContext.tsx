@@ -13,6 +13,7 @@ const CoinContextProvider = ({ children }: Props) => {
     symbol: "$",
   });
 
+
   useEffect(() => {
     const fetchAllCoin = async () => {
       try {
