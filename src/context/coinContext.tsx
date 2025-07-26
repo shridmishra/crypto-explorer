@@ -23,7 +23,7 @@ const CoinContextProvider = ({ children }: Props) => {
             method: "GET",
             headers: {
               accept: "application/json",
-              "x-cg-demo-api-key": "CG-qZr8LFNjHvrsBdo3m8nADPJG",
+              "x-cg-demo-api-key":import.meta.env.VITE_COINGECKO_API_KEY,
             },
           }
         );
